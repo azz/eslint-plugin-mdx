@@ -17,7 +17,8 @@ script:
   - yarn build
   - yarn test
 after_success:
-  - yarn travis-deploy-once "npm run semantic-release"
+  - yarn add sementic-release@^15.9.16 travis-deploy-once@^5.0.9
+  - yarn travis-deploy-once "yarn semantic-release"
 branches:
   only:
     - master
