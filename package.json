@@ -36,7 +36,8 @@
     "jest": "^23.6.0",
     "prettier": "1.10.2",
     "pretty-quick": "^1.2.0",
-    "semantic-release": "^11.0.2"
+    "semantic-release": "^15.9.16",
+    "travis-deploy-once": "^5.0.9"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"
