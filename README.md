@@ -8,8 +8,6 @@
 
 > [ESLint](https://eslint.org/) parser for [MDX](https://github.com/mdx-js/mdx)
 
-# Incomplete!
-
 ## Install
 
 With `yarn`:
