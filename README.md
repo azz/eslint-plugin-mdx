@@ -28,16 +28,13 @@ npm install --save eslint-plugin-mdx
 
 1. In your ESLint config file, add:
 
-
-```json
-{
-  "extends": ["plugin:mdx/recommended"]
-}
-```
+   ```json
+   {
+     "extends": ["plugin:mdx/recommended"]
+   }
+   ```
 
 2. Make sure ESLint knows to run on `.mdx` files:
-
-
-```shellsession
-eslint --ext js,mdx .
-```
+   ```shellsession
+   eslint --ext js,mdx .
+   ```
