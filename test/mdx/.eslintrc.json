@@ -1,4 +1,7 @@
 {
   "root": true,
+  "parserOptions": {
+    "sourceType": "module"
+  },
   "extends": ["plugin:react/recommended", "plugin:mdx/recommended"]
 }

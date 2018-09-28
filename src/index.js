@@ -3,7 +3,7 @@ import { preprocess } from './parse';
 export const processors = {
   '.mdx': {
     preprocess(text /* , filename */) {
-      return preprocess(text);
+      return [preprocess(text).join('')];
     },
 
     // takes a Message[][] and filename
