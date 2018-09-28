@@ -1,34 +1,48 @@
 {
-  "name": "eslint-parser-mdx",
+  "name": "eslint-plugin-mdx",
   "version": "0.0.0-development",
   "description": "ESLint parser for MDX",
-  "repository": "azz/eslint-parser-mdx",
+  "repository": "azz/eslint-plugin-mdx",
   "author": "Lucas Azzola <@azz>",
   "main": "./dist",
   "license": "MIT",
-  "files": ["dist"],
-  "dependencies": {},
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@mdx-js/mdx": "^0.15.4"
+  },
   "scripts": {
     "prepublishOnly": "yarn build",
     "build": "babel src -d dist --copy-files --ignore __tests__",
     "test": "jest",
+    "test:e2e": "eslint --ext mdx test/mdx",
     "lint": "eslint . --ignore-path=.gitignore",
     "semantic-release": "semantic-release",
     "precommit": "pretty-quick --staged"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.15.0",
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "eslint": "^5.6.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-jest": "^21.5.0",
+    "eslint-plugin-mdx": "link:.",
     "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-react": "^7.11.1",
     "husky": "^0.14.3",
-    "jest": "^22.0.4",
+    "jest": "^23.6.0",
     "prettier": "1.10.2",
     "pretty-quick": "^1.2.0",
     "semantic-release": "^11.0.2"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=4.7.0"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -49,6 +63,15 @@
     }
   },
   "babel": {
-    "presets": [["env", { "targets": { "node": "6.10" } }]]
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "6.10"
+          }
+        }
+      ]
+    ]
   }
 }
