@@ -1,5 +1,9 @@
 # `eslint-plugin-mdx`
 
+> **This repository is no longer maintained, and the `eslint-plugin-mdx` name has been transferred to [eslint-mdx](https://github.com/rx-ts/eslint-mdx).**
+
+---
+
 [![Travis](https://img.shields.io/travis/azz/eslint-plugin-mdx.svg?style=flat-square)](https://travis-ci.org/azz/eslint-plugin-mdx)
 [![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![npm](https://img.shields.io/npm/v/eslint-plugin-mdx.svg?style=flat-square)](https://npmjs.org/eslint-plugin-mdx)
