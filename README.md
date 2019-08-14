@@ -1,6 +1,6 @@
 # `eslint-plugin-mdx`
 
-> This repository is out of maintenance anymore, please visit [eslint-mdx](https://github.com/rx-ts/eslint-mdx) for further usage instead.
+> **This repository is no longer maintained, and the `eslint-plugin-mdx` name has been transferred to [eslint-mdx](https://github.com/rx-ts/eslint-mdx).**
 
 ---
 
